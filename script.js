@@ -1,3 +1,6 @@
+
+Copy
+
 // Enhanced script.js - Extends original to 6 questions
 let currentAdditionalQuestion = 0;
 
@@ -81,6 +84,12 @@ function moveButton(button) {
 }
 
 function showNextQuestion(questionNumber) {
+    // Hide the title after first question
+    const titleEl = document.getElementById('valentineTitle');
+    if (titleEl && questionNumber > 1) {
+        titleEl.style.display = 'none';
+    }
+    
     // Hide all sections first
     document.querySelectorAll('.question-section, .celebration').forEach(el => {
         el.classList.add('hidden');
