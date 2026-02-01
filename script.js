@@ -13,10 +13,7 @@ function initializeContent() {
     
     // Question 1
     document.getElementById('question1Text').textContent = config.questions.first.text;
-    const yesBtn1 = document.getElementById('yesBtn1');
-    yesBtn1.textContent = config.questions.first.yesBtn;
-    yesBtn1.onclick = function() { showNextQuestion(2); };
-    
+    document.getElementById('yesBtn1').textContent = config.questions.first.yesBtn;
     document.getElementById('noBtn1').textContent = config.questions.first.noBtn;
     document.getElementById('secretAnswerBtn').textContent = config.questions.first.secretAnswer;
     
