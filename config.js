@@ -23,36 +23,37 @@ const config = {
             startText: "This much!",
             nextBtn: "Next ❤️"
         },
-        // NEW: Question 3 - About Feb 14th plans
-        prethird: {
+        third: {
+            text: "Will you be my Valentine...?",
+            yesBtn: "Yes!",
+            noBtn: "No"
+        }
+    },
+
+    // NEW: Additional questions (3-5) to insert between question 2 and final question
+    additionalQuestions: [
+        {
             text: "Do you have any plans for the 14th of February?",
             yesBtn: "No",
             noBtn: "No. Stop looking for a yes."
         },
-        // NEW: Question 4 - Sarcastic response
-        prefourth: {
+        {
             text: "Uf, that sucks for you. I wish you good luck with that",
             continueBtn: "Oh fuck you."
         },
-        // NEW: Question 5 - Playful comeback
-        prefifth: {
+        {
             text: "You wish ;)",
             continueBtn: "Sigh..."
-        },
-        // Final question (was third, now sixth)
-        third: {
-            text: "Fine, fine... Will you be my valentine?",
-            yesBtn: "Yes!",
-            noBtn: "No",
-            // Multiple yes options
-            yesOptions: [
-                "Yes",
-                "Of course",
-                "I didn't think you'd ever ask",
-                "Oh fuck yeah."
-            ]
         }
-    },
+    ],
+
+    // Multiple yes options for final question
+    finalYesOptions: [
+        "Yes",
+        "Of course",
+        "I didn't think you'd ever ask",
+        "Oh fuck yeah."
+    ],
 
     // Love Meter Messages
     loveMessages: {
