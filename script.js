@@ -1,6 +1,3 @@
-
-Copy
-
 // Enhanced script.js - Extends original to 6 questions
 let currentAdditionalQuestion = 0;
 
@@ -16,7 +13,10 @@ function initializeContent() {
     
     // Question 1
     document.getElementById('question1Text').textContent = config.questions.first.text;
-    document.getElementById('yesBtn1').textContent = config.questions.first.yesBtn;
+    const yesBtn1 = document.getElementById('yesBtn1');
+    yesBtn1.textContent = config.questions.first.yesBtn;
+    yesBtn1.onclick = function() { showNextQuestion(2); };
+    
     document.getElementById('noBtn1').textContent = config.questions.first.noBtn;
     document.getElementById('secretAnswerBtn').textContent = config.questions.first.secretAnswer;
     
