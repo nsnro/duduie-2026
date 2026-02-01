@@ -1,7 +1,7 @@
 // Configuration file for Valentine's Day Website
 const config = {
     // Basic Information
-    valentineName: "Duduieeee",
+    valentineName: "Duduie",
     pageTitle: "Will You Be My Valentine? 💝",
 
     // Floating Background Elements
@@ -10,7 +10,7 @@ const config = {
         bears: ['🧸', '🐻']
     },
 
-    // Questions Configuration - 6 Questions
+    // Questions Configuration
     questions: {
         first: {
             text: "Do you like me?",
@@ -20,25 +20,32 @@ const config = {
         },
         second: {
             text: "How much?",
-            yesBtn: "This much",
+            startText: "This much!",
             nextBtn: "Next ❤️"
         },
-        third: {
+        // NEW: Question 3 - About Feb 14th plans
+        prethird: {
             text: "Do you have any plans for the 14th of February?",
             yesBtn: "No",
             noBtn: "No. Stop looking for a yes."
         },
-        fourth: {
+        // NEW: Question 4 - Sarcastic response
+        prefourth: {
             text: "Uf, that sucks for you. I wish you good luck with that",
-            yesBtn: "Oh fuck you."
+            continueBtn: "Oh fuck you."
         },
-        fifth: {
+        // NEW: Question 5 - Playful comeback
+        prefifth: {
             text: "You wish ;)",
-            yesBtn: "Sigh..."
+            continueBtn: "Sigh..."
         },
-        sixth: {
+        // Final question (was third, now sixth)
+        third: {
             text: "Fine, fine... Will you be my valentine?",
-            options: [
+            yesBtn: "Yes!",
+            noBtn: "No",
+            // Multiple yes options
+            yesOptions: [
                 "Yes",
                 "Of course",
                 "I didn't think you'd ever ask",
@@ -47,7 +54,7 @@ const config = {
         }
     },
 
-    // Love Meter Messages (for question 2)
+    // Love Meter Messages
     loveMessages: {
         extreme: "WOOOOW You love me that much?? 🥰🚀💝",
         high: "To infinity and beyond! 🚀💝",
